@@ -1,0 +1,15 @@
+device: cuda
+batch_size: 100
+hidden_dims: [50,50,50]
+p: 3
+q: 3
+G_lr: 2.e-4
+D_lr: 2.e-4
+G_beta1: 0.
+G_beta2: 0.9
+D_beta1: 0.
+D_beta2: 0.9
+total_steps: 1000
+num_D_steps: 4
+mc_size: 1000
+seed: 0
