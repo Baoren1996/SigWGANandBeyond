@@ -297,9 +297,9 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Turn cuda off / on during evalution.')
     parser.add_argument('-base_dir', default='./numerical_results', type=str)
-    parser.add_argument('-use_cuda', default=True)#action='store_true')
+    parser.add_argument('-use_cuda',  action='store_true')
     parser.add_argument('-datasets', default=['VAR',], nargs="+")
-    parser.add_argument('-algos', default=['SigCWGAN','MCGAN','SigMCGAN','ProSigMCGAN','GMMN', 'RCGAN', 'TimeGAN', 'RCWGAN'], nargs="+")#'MCWGAN_3','MCWGAN_2','SigCWGAN', #'GARCH','GMMN', 'RCGAN', 'TimeGAN',###,v 
+    parser.add_argument('-algos', default=['SigCWGAN','MCGAN','SigMCGAN','GMMN', 'RCGAN', 'TimeGAN', 'RCWGAN'], nargs="+")#'MCWGAN_3','MCWGAN_2','SigCWGAN', #'GARCH','GMMN', 'RCGAN', 'TimeGAN',###,v 
     args = parser.parse_args()
     evaluate_benchmarks(base_dir=args.base_dir, use_cuda=args.use_cuda, datasets=args.datasets, algos=args.algos,ind='MCGAN_best')
     

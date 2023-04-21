@@ -138,7 +138,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser() 
     # Meta parameters
     parser.add_argument('-base_dir', default='./gridsearch_results', type=str)
-    parser.add_argument('-use_cuda',  default=True)#action='store_true')
+    parser.add_argument('-use_cuda',  action='store_true')
     parser.add_argument('-num_seeds', default=1, type=int)
     parser.add_argument('-initial_seed', default=0, type=int)
     parser.add_argument('-datasets', default=['STOCKS',], nargs="+")
