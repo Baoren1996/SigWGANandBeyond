@@ -216,7 +216,7 @@ def get_data(data_type, p, q,pip=False, **data_params):
 def download_man_ahl_dataset():
     import requests
     from zipfile import ZipFile
-    url = 'https://realized.oxford-man.ox.ac.uk/images/oxfordmanrealizedvolatilityindices.zip'
+    url = 'https://github.com/onnokleen/mfGARCH/raw/v0.1.9/data-raw/OxfordManRealizedVolatilityIndices.zip'
     r = requests.get(url)
     with open('./oxford.zip', 'wb') as f:
         pbar = tqdm(unit="B", total=int(r.headers['Content-Length']))
@@ -233,7 +233,7 @@ def download_man_ahl_dataset():
 def download_mit_ecg_dataset():
     import requests
     from zipfile import ZipFile
-    url = 'https://storage.googleapis.com/mitdb-1.0.0.physionet.org/mit-bih-arrhythmia-database-1.0.0.zip'
+    url = 'https://www.physionet.org/static/published-projects/mitdb/mit-bih-arrhythmia-database-1.0.0.zip'
     r = requests.get(url)
     with open('./mit_db.zip', 'wb') as f:
         pbar = tqdm(unit="B", total=int(r.headers['Content-Length']))

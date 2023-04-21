@@ -118,12 +118,12 @@ def get_dataset_configuration(dataset):
 def main(args):
     if not pt.exists('./data'):
         os.mkdir('./data')
-    #if not pt.exists('./data/oxfordmanrealizedvolatilityindices.csv'):
-    #    print('Downloading Oxford MAN AHL realised library...')
-    #    download_man_ahl_dataset()
-    #if not pt.exists('./data/mitdb'):
-    #    print('Downloading MIT-ECG database...')
-    #    download_mit_ecg_dataset()
+    if not pt.exists('./data/oxfordmanrealizedvolatilityindices.csv'):
+        print('Downloading Oxford MAN AHL realised library...')
+        download_man_ahl_dataset()
+    if not pt.exists('./data/mitdb'):
+        print('Downloading MIT-ECG database...')
+        download_mit_ecg_dataset()
     print('Start of training. CUDA: %s' % args.use_cuda)
     for dataset in args.datasets:
         for algo_id in args.algos:
