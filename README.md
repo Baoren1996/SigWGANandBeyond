@@ -24,7 +24,7 @@ This repository contains implementations of synthetic and empirical datasets.
 
 ## Baselines
 
-We compare our SigCGAN with several baselines including: TimeGAN, RCGAN, GMMN(GAN with MMD). The baselines functions are in sig_lib/baselines.py
+We compare our SigCGAN and MCGAN with several baselines including: TimeGAN, RCGAN, GMMN(GAN with MMD). The baselines functions are in sig_lib/baselines.py
 
 
 ## Training
