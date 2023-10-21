@@ -1,10 +1,8 @@
-# The authors' official PyTorch SigCWGAN implementation.
+# The authors' official PyTorch SigCWGAN and MCGAN implementation.
 
-This repository is the official implementation of [Conditional Sig-Wasserstein GANs for Time Series Generation]
+This repository is the official implementation of PhD thesis titled by "BreadcrumbsThe-Signature-Wasserstein-GAN-for-Time-Series-Generation-and-Beyond
+" by Dr. Baoren Xiao.
 
-Authors:
-
-Paper Link:
 
 ## Requirements
 
